@@ -7,6 +7,7 @@ questionNumber1 = population / 2;
 const descriptionV1  = country + ' is in ' + continent + ', and its ' + population + ' people speak ' + language; 
 const descriptionV2  = `${country} is located in ${continent}, and its ${population} people speak ${language}`;
 
+
 console.log("Country Selected: "+ country , "\nIt is located in: "+ continent, "\nIts population is: "+population );
 console.log(typeof isIsland, typeof population, typeof country, typeof language);
 console.log(questionNumber1);
@@ -47,3 +48,37 @@ else
 
     console.log('Costa Rica does not meet your criteria');
 }
+
+/*language = prompt('Choose a language');
+
+switch (language){
+
+case 'chinese': 
+case 'mandarin': 
+console.log('MOST number of native speakers!');
+break;
+
+case 'spanish': 
+console.log('2nd place in number of native speakers');
+break;
+
+case 'english': 
+console.log('3rd place');
+break;
+
+case 'hindi': 
+console.log('Number 4');
+break;
+
+case 'arabic': 
+console.log('5th most spoken language');
+break;
+
+default:
+console.log('Great language too :D');
+
+
+}*/
+
+let popuTernary = population >= 33000000 ? "Costa Rica's population is above average" : "Costa Rica's population is below average";
+console.log(popuTernary);
