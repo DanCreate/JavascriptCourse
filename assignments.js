@@ -1,4 +1,4 @@
-const country = "Costa Rica";
+/*const country = "Costa Rica";
 const continent = "Central America";
 let population = 5000000;
 const isIsland = false;
@@ -35,7 +35,7 @@ console.log(descriptionV2);
 {
     console.log('No neighbours');
 
-}*/
+}
 
 
 if(language == 'English' && population< 50000000 && isIsland !== false)
@@ -78,7 +78,18 @@ default:
 console.log('Great language too :D');
 
 
-}*/
+}
 
 let popuTernary = population >= 33000000 ? "Costa Rica's population is above average" : "Costa Rica's population is below average";
-console.log(popuTernary);
+console.log(popuTernary);*/
+
+function describeCountry(country, population, capitalCity)
+
+{
+    return console.log(`${country} has ${population} million people and its capital city is ${capitalCity}`);
+
+}
+
+describeCountry('Morocco', 10000000, 'Test1');
+describeCountry('Sri Lanka', 36000000, 'Test2');
+describeCountry('Costa Rica', 50000000, 'San Jose');
