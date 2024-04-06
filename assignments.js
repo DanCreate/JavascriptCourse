@@ -93,3 +93,45 @@ function describeCountry(country, population, capitalCity)
 describeCountry('Morocco', 10000000, 'Test1');
 describeCountry('Sri Lanka', 36000000, 'Test2');
 describeCountry('Costa Rica', 50000000, 'San Jose');
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let population;
+
+//declaration
+function percentageOfWorld1(population)
+{   
+return ((population / 7900)*100);
+}
+
+//expression
+let expre = function percentageOfWorld2(population)
+{    
+return ((population / 7900)*100);
+}
+
+const usa = percentageOfWorld1(331);
+const india = percentageOfWorld1(213);
+const costa_rica = percentageOfWorld1(5);
+
+console.log(`Percentage for United States ${usa}%, India ${india}% and Costa Rica ${costa_rica}%`);
+
+//arrow function
+const percentageOfWorld3 = (population) => { return ((population / 7900)*100); }
+
+const usa2 = percentageOfWorld1(331);
+const india2 = percentageOfWorld1(213);
+const costa_rica2 = percentageOfWorld1(5);
+
+console.log(`Percentage for United States ${usa2}%, India ${india2}% and Costa Rica ${costa_rica2}%`);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+let country;
+let population2;
+
+function describePopulation(country, population2)
+{
+    let calculation = percentageOfWorld1(population2);
+return console.log(`${country} has ${population2} million people, which is about ${calculation}`);
+}
+
+describePopulation('Costa Rica', 5);
